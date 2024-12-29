@@ -24,7 +24,7 @@ const App = () => {
   })
   .reduce((total, videoSecond) => total + videoSecond);
 
-// Convert seconds to mm:ss
+
 const minutes = Math.floor(totalTimeInSeconds / 60);
 const seconds = totalTimeInSeconds % 60;
 
