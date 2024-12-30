@@ -5,7 +5,7 @@ const App = () => {
   const videos = [
     { id: 1, title: "Video 1", time: "1:10" },
     { id: 2, title: "Video 2", time: "2:14" },
-    { id: 3, title: "Video 3", time: "3:44" },
+    { id: 3, title: "Video 3", time: "10:44" },
     { id: 4, title: "Video 4", time: "5:05" },
     { id: 5, title: "Video 5", time: "6:03" },
     { id: 6, title: "Video 6", time: "12:39" },
@@ -27,6 +27,7 @@ const App = () => {
 
 const minutes = Math.floor(totalTimeInSeconds / 60);
 const seconds = totalTimeInSeconds % 60;
+const hours = 
 
 const totalTime = `${minutes}:${seconds.toString().padStart(2, '0')}`;
 
