@@ -25,11 +25,11 @@ const App = () => {
   .reduce((total, videoSecond) => total + videoSecond);
 
 
-const minutes = Math.floor(totalTimeInSeconds / 60);
-const seconds = totalTimeInSeconds % 60;
-const hours = 
+  const minutes = Math.floor(totalTimeInSeconds / 60);
+  const seconds = totalTimeInSeconds % 60;
+  const hours = Math.floor((minutes+ seconds)/60)
 
-const totalTime = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+const totalTime = `${hours}: ${minutes}:${seconds.toString().padStart(2, '0')}`;
 
   return (
     <div className='parent'>
