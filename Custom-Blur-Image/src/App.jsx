@@ -7,9 +7,9 @@ const App = () => {
   const [blue, setblue] = useState(50)
   const [blur, setblur] = useState(0)
   const generateColor = (e)=>{
-    setblue((e.target.value)+50)
-    setred(e.target.value)
-    setgreen((e.target.value)+10)
+    setblue(Math.random()*255)
+    setred(Math.random()*255)
+    setgreen(Math.random()*255)
     
   }
 
@@ -28,7 +28,7 @@ const App = () => {
         <label htmlFor=""  className='text-2xl font-semibold'>blur</label>
         <input  className='w-60' type="range"
         value={blur}
-        min={2}
+        // min={2}
         max={20}
         onChange={(e)=>{
           blurFun(e)
